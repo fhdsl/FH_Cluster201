@@ -1,0 +1,7 @@
+
+
+
+# Data Storage
+
+Much about how you structure your computing work depends on where and how your data are stored.  We'll discuss a bit about how data storage might influence your computing choices in this chapter. 
+
