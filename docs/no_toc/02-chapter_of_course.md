@@ -13,7 +13,7 @@ There are many ways to leverage a local cluster and cloud resources for computin
 - can run cronjobs from here to schedule things to happen regularly
 
 
-## `Grabnode`
+### `Grabnode`
 
 - runs one big job with limited configuration options
 
@@ -32,7 +32,7 @@ SLURM job submission to gizmo:
 - SLURM array jobs
 
 
-## Workflow managers
+### Workflow managers
 
 - good when you have multi-step processes that need to occur together
 - when your multi-step processes have dependencies that conflict: allows task isolation and management 
@@ -40,9 +40,7 @@ SLURM job submission to gizmo:
 - want to leverage the cluster allocation very efficiently by breaking jobs up
 - want to prepare a workflow for better reproducibility, sharing, and expanding to the cloud
 
-### Cromwell
-
-### Nextflow
+#### Cromwell
 
 ## Cloud computing
 
