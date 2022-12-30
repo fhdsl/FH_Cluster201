@@ -1,0 +1,25 @@
+---
+title: "FH Cluster 102"
+date: "December 30, 2022"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: book.bib
+biblio-style: apalike
+link-citations: yes
+description: A guide for effective use of high performance computing resources for research.  
+favicon: assets/favicon.ico
+---
+
+
+
+# About this Book {-}
+## Motivation
+To create a broadly useful guide, regardless of level of expertise with computing, that aids researchers in knowing how best to leverage high performance computing resources in their research. 
+
+## Target Audience  
+
+While much of the specifics of this guide will be oriented toward Fred Hutch researchers, many of the strategic issues discussed here may be broadly applicable as many research institutions have analogous arrangements for their computing infrastructure.  
+
+## Curriculum  
+
+The course covers...
