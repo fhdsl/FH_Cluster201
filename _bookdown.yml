@@ -2,7 +2,8 @@ book_filename: "FH Cluster 201"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
-            "02-chapter_of_course.Rmd",
+            "01-computing.Rmd",
+            "02-storage.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
