@@ -1,4 +1,6 @@
-1-Computing-Modes.md
-2-References.md
+1-Interactive-Modes.md
+2-Non-Interactive-Modes.md
+3-Sharing-and-Collaboration.md
+4-References.md
 About-this-Book.md
 About-the-Authors.md
