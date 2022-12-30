@@ -1,7 +1,8 @@
 
-# Computing Modes
 There are many ways to leverage a local cluster and cloud resources for computing.  
 
+
+# Interactive Modes
 
 ## Rhino (Login Nodes)
 
@@ -15,6 +16,8 @@ There are many ways to leverage a local cluster and cloud resources for computin
 ## `Grabnode`
 
 - runs one big job with limited configuration options
+
+# Non-Interactive Modes
 
 ## SLURM (S-commands)
 
@@ -41,8 +44,6 @@ SLURM job submission to gizmo:
 
 ### Nextflow
 
-
-
 ## Cloud computing
 
 - once a workflow has been optimized (likely using a workflow manager above), leveraging the cloud for large, production workflows can help your lab's usage of the cluster while also encouraging reproducibility
@@ -50,3 +51,16 @@ SLURM job submission to gizmo:
 
 - great when you do not have access to a local cluster or when you want to use a commercial platform for running computational work. 
 
+
+# Sharing and Collaboration
+
+Issues like sharable code, sharable software environments and compute resource optimization become more important when you want to share and collaborate. 
+
+
+- GitHub
+- Dockerhub/Quay.io 
+- Dockstore 
+
+- Terra
+- DNA Nexus
+- other people's resources (like their non-SLURM cluster or maybe they use Azure or Google or AWS primarily?)
