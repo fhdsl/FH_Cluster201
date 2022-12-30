@@ -1,12 +1,14 @@
 motivation
 target-audience
 curriculum
-computing-modes
+interactive-modes
 rhino-login-nodes
 grabnode
+non-interactive-modes
 slurm-s-commands
 workflow-managers
 cromwell
 nextflow
 cloud-computing
+sharing-and-collaboration
 references
