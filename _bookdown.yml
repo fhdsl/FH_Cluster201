@@ -1,8 +1,7 @@
-book_filename: "Course_Name"
+book_filename: "FH Cluster 201"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
             "02-chapter_of_course.Rmd",
             "About.Rmd",
             "References.Rmd"]

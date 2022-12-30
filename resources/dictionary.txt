@@ -31,3 +31,15 @@ UE5
 reproducibility
 underserved
 www
+Rhino
+Gizmo
+rhino
+gizmo
+Cromwell
+Nextflow
+SLURM
+cronjobs
+FHDaSL
+grabnode
+sbatch
+srun
