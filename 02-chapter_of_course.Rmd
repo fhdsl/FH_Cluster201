@@ -1,6 +1,6 @@
 
 # Computing Modes
-There are many ways to leverage a local cluster and cloud resources for computing.  While the names and specifics discussed here are focused to those resources available at the Fred Hutch, many research institutions have analogous arrangements for their computing infrastrucutre so many of the strategic issues here might be broadly applicable. 
+There are many ways to leverage a local cluster and cloud resources for computing.  
 
 
 ## Rhino (Login Nodes)
