@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Non-Interactive Modes | FH Cluster 102</title>
+  <title>Chapter 1 Data Storage | FH Cluster 102</title>
   <meta name="description" content="A guide for effective use of high performance computing resources for research." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Non-Interactive Modes | FH Cluster 102" />
+  <meta property="og:title" content="Chapter 1 Data Storage | FH Cluster 102" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Non-Interactive Modes | FH Cluster 102" />
+  <meta name="twitter:title" content="Chapter 1 Data Storage | FH Cluster 102" />
   
   <meta name="twitter:description" content="A guide for effective use of high performance computing resources for research." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="interactive-modes.html"/>
-<link rel="next" href="sharing-and-collaboration.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -78,24 +78,9 @@
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>0.2</b> Target Audience</a></li>
 <li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#curriculum"><i class="fa fa-check"></i><b>0.3</b> Curriculum</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="interactive-modes.html"><a href="interactive-modes.html"><i class="fa fa-check"></i><b>1</b> Interactive Modes</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="interactive-modes.html"><a href="interactive-modes.html#rhino-login-nodes"><i class="fa fa-check"></i><b>1.1</b> Rhino (Login Nodes)</a></li>
-<li class="chapter" data-level="1.2" data-path="interactive-modes.html"><a href="interactive-modes.html#grabnode"><i class="fa fa-check"></i><b>1.2</b> <code>Grabnode</code></a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html"><i class="fa fa-check"></i><b>2</b> Non-Interactive Modes</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html#slurm-s-commands"><i class="fa fa-check"></i><b>2.1</b> SLURM (S-commands)</a></li>
-<li class="chapter" data-level="2.2" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html#workflow-managers"><i class="fa fa-check"></i><b>2.2</b> Workflow managers</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html#cromwell"><i class="fa fa-check"></i><b>2.2.1</b> Cromwell</a></li>
-<li class="chapter" data-level="2.2.2" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html#nextflow"><i class="fa fa-check"></i><b>2.2.2</b> Nextflow</a></li>
-</ul></li>
-<li class="chapter" data-level="2.3" data-path="non-interactive-modes.html"><a href="non-interactive-modes.html#cloud-computing"><i class="fa fa-check"></i><b>2.3</b> Cloud computing</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="sharing-and-collaboration.html"><a href="sharing-and-collaboration.html"><i class="fa fa-check"></i><b>3</b> Sharing and Collaboration</a></li>
+<li class="chapter" data-level="1" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i><b>1</b> Data Storage</a></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
-<li class="chapter" data-level="4" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>4</b> References</a></li>
+<li class="chapter" data-level="2" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>2</b> References</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
@@ -130,44 +115,10 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="non-interactive-modes" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Non-Interactive Modes</h1>
-<div id="slurm-s-commands" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> SLURM (S-commands)</h2>
-<p>SLURM job submission to gizmo:</p>
-<ul>
-<li><p>making jobs resilient to connectivity issues (grabnode sessions end your job if you lose connectivity)</p></li>
-<li><p>no need to babysit the job this way</p></li>
-<li><p>generates job logs for troubleshooting</p></li>
-<li><p>uses the SLURM scheduler and better lab job allocation (helps you get resources sooner and in coordination with the rest of your lab and the Hutch users more broadly)</p></li>
-<li><p>srun, sbatch, etc. gives you more control and options for configuration that let your jobs run better in many ways</p></li>
-<li><p>SLURM array jobs</p></li>
-</ul>
-</div>
-<div id="workflow-managers" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Workflow managers</h2>
-<ul>
-<li>good when you have multi-step processes that need to occur together</li>
-<li>when your multi-step processes have dependencies that conflict: allows task isolation and management</li>
-<li>good when you’re working on multiple different workflows at the same time</li>
-<li>want to leverage the cluster allocation very efficiently by breaking jobs up</li>
-<li>want to prepare a workflow for better reproducibility, sharing, and expanding to the cloud</li>
-</ul>
-<div id="cromwell" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Cromwell</h3>
-</div>
-<div id="nextflow" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Nextflow</h3>
-</div>
-</div>
-<div id="cloud-computing" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Cloud computing</h2>
-<ul>
-<li><p>once a workflow has been optimized (likely using a workflow manager above), leveraging the cloud for large, production workflows can help your lab’s usage of the cluster while also encouraging reproducibility</p></li>
-<li><p>Workflows can ideally be run by others, not just those with access to the Hutch resources</p></li>
-<li><p>great when you do not have access to a local cluster or when you want to use a commercial platform for running computational work.</p></li>
-</ul>
-</div>
+<div id="data-storage" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Data Storage</h1>
+<p>Much about how you structure your computing work depends on where and how your data are stored. We’ll discuss a bit about how data storage might influence your computing choices in this chapter.</p>
+
 </div>
 <hr>
 <center> 
@@ -183,8 +134,8 @@
           </div>
         </div>
       </div>
-<a href="interactive-modes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sharing-and-collaboration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
